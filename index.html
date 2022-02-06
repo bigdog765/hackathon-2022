@@ -9,17 +9,13 @@
   </head>
   <body>
     <div id="myDIV" class="header">
-      <h2>My Everyday To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title..." />
+      <h1>To Do List</h1>
+      <input type="text" id="myInput" placeholder="Enter Task" />
+      <span onclick="newelement()" class="addBtn">Add</span>
     </div>
-
-    <ul id="myUL">
-      <li>Hit the gym</li>
-      <li class="checked">Pay bills</li>
-      <li>Read Books</li>
-      <li>Cleaning house</li>
-      <li>Schedule an appointment</li>
-      <li>Complete Math hw</li>
-    </ul>
+    <div class="to-do-list">
+      <ul id="user-list"></ul>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
