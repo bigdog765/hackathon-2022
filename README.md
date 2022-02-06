@@ -1,7 +1,7 @@
 # hackathon-2022
 Project information
            - Motivational To-Do List
-           - This application/website is an interface for a to-do list app that provides the user with a list of tasks that they need to accomplish for the day. We have      implemented a timer function as well as motivational quotes for the user so that they are motivated to complete their tasks.   
+           - This application/website is an interface for a to-do list app that provides the user with a list of tasks that they need to accomplish for the day. We have                      - implemented a timer function as well as motivational quotes for the user so that they are motivated to complete their tasks.   
            - pollchowdhury#0432, Mr dhoni#7268, goldenfuze#8601 on discord.
            
 Overview of what was done
@@ -13,11 +13,11 @@ Overview of what was done
 
            USERS CAN DELETE A TASK​
 
-           USERS CAN MARK or CHECK OFF A TASK by clicking on a task ​
+           USERS CAN MARK or CHECK OFF A TASK by clicking on it ​
 
            USERS CAN TRACK A TASK USING A TIMER​
 
-           THE APP also DISPLAY MOTIVATIONAL QUOTES EVERY TIME WHEN THE USER CLICKS TO DISPLAY.​
+           THE APP also DISPLAY MOTIVATIONAL QUOTES EVERY TIME THE USER CLICKS TO DISPLAY.​
            
            
 Navigating the repo
