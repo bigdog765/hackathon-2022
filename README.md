@@ -13,7 +13,7 @@ Overview of what was done
 
            USERS CAN DELETE A TASK​
 
-           USERS CAN MARK HOVER CHECK OFF A TASK ​
+           USERS CAN MARK or CHECK OFF A TASK by clicking on a task ​
 
            USERS CAN TRACK A TASK USING A TIMER​
 
