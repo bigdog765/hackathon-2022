@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,10 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Task Management App</title>
   </head>
   <body>
+    <div class="Quotes-timer">
+      <!--Quotes section starts-->
+      <div class="quotes">
+        <span class="quote" id="quote"></span>
+        <p class="author" id="author"></p>
+        <button class="next" onclick="getNewQuote()">Next quote</button>
+      </div>
+      <!--Timer section starts-->
+
+      <div class="timer">
+        <div id="container">
+          <label id="hour-label" class="label"
+            >Hour
+            <input
+              id="hour"
+              type="number"
+              max="99"
+              min="0"
+              value="0"
+              class="time"
+          /></label>
+          <label id="min-label" class="label">
+            Minutes
+            <input
+              id="minute"
+              type="number"
+              max="60"
+              min="0"
+              value="0"
+              class="time"
+          /></label>
+          <label id="sec-label" class="label">
+            Seconds
+            <input
+              id="sec"
+              type="number"
+              max="60"
+              min="0"
+              value="0"
+              class="time"
+          /></label>
+          <button id="start" class="btn">Start</button>
+          <button id="reset" class="btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <!--To do list start-->
     <div id="myDIV" class="header">
       <h1>To Do List</h1>
       <input type="text" id="myInput" placeholder="Enter Task" />
@@ -18,18 +64,8 @@
     <div class="to-do-list">
       <ul id="user-list"></ul>
     </div>
-    
-      
 
-        <span class="quote" id="quote"></span>
-        <p class="author" id="author"></p>
-      <button class="next" onclick="getNewQuote()">Next quote</button>
-    </div>
-
-    
     <script src="script.js"></script>
     <script src="hackathon.js"></script>
   </body>
 </html>
-
-

@@ -24,17 +24,6 @@ function newelement() {
   span.appendChild(x_bar);
   li.appendChild(span);
 
-  var list = document.querySelector("ul");
-  list.addEventListener(
-    "click",
-    function (ev) {
-      if (ev.target.tagName === "LI") {
-        ev.target.classList.toggle("checked");
-      }
-    },
-    false
-  );
-
   var close = document.getElementsByClassName("close_bar");
   var i;
   for (i = 0; i < close.length; i++) {
@@ -44,6 +33,16 @@ function newelement() {
     };
   }
 }
+var list = document.querySelector("ul");
+list.addEventListener(
+  "click",
+  function (ev) {
+    if (ev.target.tagName === "LI") {
+      ev.target.classList.toggle("checked");
+    }
+  },
+  false
+);
 
 function timer() {
   var want_timer = prompt(
@@ -52,8 +51,60 @@ function timer() {
   if (want_timer !== "yes" || want_timer === null) {
     return;
   } else {
-    var hour = prompt("Enter Hours:");
-    var min = prompt("Enter Minutes");
-    var sec = prompt("Enter seconds");
+    var hour = prompt("Enter Hours:(min: 0, max: 99)");
+    var min = prompt("Enter Minutes:(min: 0, max: 60)");
+    var sec = prompt("Enter seconds:(min: 0, max: 60)");
+    alert("click Start to begin the timer");
   }
+
+  var h = document.getElementById("hour");
+  var m = document.getElementById("minute");
+  var s = document.getElementById("sec");
+
+  h.value = hour;
+  m.value = min;
+  s.value = sec;
+}
+
+var start = document.getElementById("start");
+var reset = document.getElementById("reset");
+var h = document.getElementById("hour");
+var m = document.getElementById("minute");
+var s = document.getElementById("sec");
+
+var startTimer = null;
+reset.addEventListener("click", function () {
+  h.value = 0;
+  m.value = 0;
+  s.value = 0;
+  stopInterval();
+});
+start.addEventListener("click", function () {
+  //initialize the variable
+  function startInterval() {
+    startTimer = setInterval(function () {
+      set_timer();
+    }, 1000);
+  }
+  startInterval();
+});
+
+function set_timer() {
+  if (h.value == 0 && m.value == 0 && s.value == 0) {
+    h.value = 0;
+    m.value = 0;
+    s.value = 0;
+  } else if (s.value != 0) {
+    s.value--;
+  } else if (m.value != 0 && s.value == 0) {
+    s.value = 59;
+    m.value--;
+  } else if (h.value != 0 && m.value == 0) {
+    m.value = 60;
+    h.value--;
+  }
+  return;
+}
+function stopInterval() {
+  clearInterval(startTimer);
 }
