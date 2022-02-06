@@ -1,3 +1,4 @@
+lines (24 sloc)  705 Bytes  
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Task Management App</title>
   </head>
   <body>
@@ -16,6 +18,26 @@
     <div class="to-do-list">
       <ul id="user-list"></ul>
     </div>
+    
+      <h2>My Everyday To Do List</h2>
+      <input type="text" id="myInput" placeholder="Title..." />
+      
+        <span class="quote" id="quote"></span>
+        <p class="author" id="author"></p>
+      <button class="next" onclick="getNewQuote()">Next quote</button>
+    </div>
+
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Read Books</li>
+      <li>Cleaning house</li>
+      <li>Schedule an appointment</li>
+      <li>Complete Math hw</li>
+    </ul>
     <script src="script.js"></script>
+    <script src="hackathon.js"></script>
   </body>
 </html>
+
+

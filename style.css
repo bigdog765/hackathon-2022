@@ -1,9 +1,9 @@
-* {
+*{
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   background-color: rgb(235, 232, 232);
 }
-/* Just to check whether i can make changes or not */
+
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
@@ -48,7 +48,7 @@ ul li.checked {
 
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
-  content: "";
+  content: '';
   position: absolute;
   border-color: rgb(34, 255, 0);
   border-style: solid;
@@ -128,3 +128,4 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
