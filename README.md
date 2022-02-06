@@ -6,6 +6,7 @@ Project information
            
 Overview of what was done
            -THE PURPOSE OF THIS APPLICATION IS TO HELP THE USER TRACK THEIR DAY-TO-DAY TASKS USING A TO-DO LIST. 
+           We approached the problem thinking that if a user is stuck at home, he/she might have some tasks that they would want to complete in a timely manner. so, we came up with the idea of developing a to-do list with a timer. This application will help any user to be good at managing their day to day task along with teaching them how to use their time efficiently.  
            
            THE TO-DO LIST WILL HAVE THE FOLLOWING FUNCTION:​
 
