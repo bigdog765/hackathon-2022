@@ -5,14 +5,27 @@ Project information
            - pollchowdhury#0432, Mr dhoni#7268, goldenfuze#8601 on discord.
            
 Overview of what was done
-           - How did you approach the problem and why?
-           - What languages, software, API, etc was used?
-           - If applicable, what data did you use?
-                - How can this be obtained?
-           - What work did you complete during the hackathon?
-           - What were the outcomes?
+           -THE PURPOSE OF THIS APPLICATION IS TO HELP THE USER TRACK THEIR DAY-TO-DAY TASKS USING A TO-DO LIST. 
+           
+           THE TO-DO LIST WILL HAVE THE FOLLOWING FUNCTION:​
+
+           USERS CAN ADD A TASK ​ 
+
+           USERS CAN DELETE A TASK​
+
+           USERS CAN MARK HOVER CHECK OFF A TASK ​
+
+           USERS CAN TRACK A TASK USING A TIMER​
+
+           THE APP also DISPLAY MOTIVATIONAL QUOTES EVERY TIME WHEN THE USER CLICKS TO DISPLAY.​
+           
            
 Navigating the repo
-          - Where to find the notebooks, data, code, etc in the repo
-          - An explanation of what key files are
-          - How to reproduce the outputs of the hack
+          The main file is index.html
+          
+          list.js --- This Javascript file contains the To-do list implementation, along with the implementation of the timer function
+          
+          qustes.js -- This javascript file contains implementation for generating random quotes from an API.
+          
+          style.css --- This CSS file contain all the styles for the website.
+          
